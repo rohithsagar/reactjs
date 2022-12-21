@@ -3,6 +3,7 @@ import "./App.css";
 import Todo from "./component/Todo";
 import Counter from "./component/Counter"
 import Forms from "./component/Forms";
+import List from "./component/List";
 
 class App extends Component {
   state = {
@@ -17,11 +18,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>{this.state.myString}</h1>
-        <button onClick={this.handleChange}> Change Text</button>
+        <h1>List</h1>
+        {/* <button onClick={this.handleChange}> Change Text</button>
         <Todo myStringOne={this.state.myStringOne} />
         <Counter />
-        <Forms />
+        <Forms /> */}
+        <List />
       </div>
     );
   }
