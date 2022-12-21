@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Todo from "./component/Todo";
 import Counter from "./component/Counter"
+import Forms from "./component/Forms";
 
 class App extends Component {
   state = {
@@ -20,6 +21,7 @@ class App extends Component {
         <button onClick={this.handleChange}> Change Text</button>
         <Todo myStringOne={this.state.myStringOne} />
         <Counter />
+        <Forms />
       </div>
     );
   }
