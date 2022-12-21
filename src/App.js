@@ -5,14 +5,19 @@ import Todo from "./component/Todo";
 class App extends Component {
   state = {
     myString: "Hello",
-    myStringOne: "Debug"
+    myStringOne: "Debug",
   };
-
+  handleChange = () => {
+    this.setState({
+      myStringOne: "Media"
+    })
+  };
   render() {
     return (
       <div className="App">
         <h1>{this.state.myString}</h1>
-        <Todo  myStringOne={this.state.myStringOne} />
+        <button onClick={this.handleChange}> Change Text</button>
+        <Todo myStringOne={this.state.myStringOne} />
       </div>
     );
   }
