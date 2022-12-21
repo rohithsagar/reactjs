@@ -14,12 +14,20 @@ class List extends Component {
       },
     ],
   };
+
+  componentDidMount(){
+    alert();
+
+  }
+  componentWillUnmount(){
+    
+  }
   render() {
     return (
       <div>
         <ul>
           {this.state.data.map((value, index) => (
-            <li key={index}>
+            <li key={value.id}>
               {value.id}-{value.Name}-{value.age}
             </li>
           ))}
