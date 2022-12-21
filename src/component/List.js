@@ -19,7 +19,7 @@ class List extends Component {
       <div>
         <ul>
           {this.state.data.map((value, index) => (
-            <li>
+            <li key={index}>
               {value.id}-{value.Name}-{value.age}
             </li>
           ))}
